@@ -1,90 +1,177 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="km" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>លិខិតអញ្ជើញពិធីកាត់សក់បង្កក់សិរី (Hair Cutting Ritual) - ហួកាំង ថារ៉ា & ខេន លីដា</title>
-    <link href="https://github.com/tharahuokaing/wedding/blob/main/footer.png?raw=true" rel="stylesheet">
+    <title>លិខិតអញ្ជើញពិធីកាត់សក់បង្កក់សិរី | Hair Cutting Ceremony - ហួកាំង ថារ៉ា & ខេន លីដា</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&family=Moul&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="invitation-container">
+        <!-- Header Ornament -->
         <div class="khmer-sticker-header">
-            <!-- Fixed typo: weeding -> wedding -->
-            <img src="https://github.com/tharahuokaing/wedding/blob/main/footer.png?raw=true" alt="Decorative Traditional Header Sign">
+            <img src="https://github.com/tharahuokaing/wedding/blob/main/footer.png?raw=true" alt="Decorative Traditional Header Sign" loading="lazy">
         </div>
 
-        <h1 class="title-moul">សេចក្តីជូនដំណឹង និងអញ្ជើញចូលរួម<br>ក្នុងពិធីកាត់សក់បង្កក់សិរី (Hair Cutting Ritual)</h1>
+        <!-- Main Title Header -->
+        <header class="ceremony-header">
+            <h1 class="title-moul">សេចក្តីជូនដំណឹង និងអញ្ជើញចូលរួម<br>ក្នុងពិធីកាត់សក់បង្កក់សិរី</h1>
+            <p class="ceremony-subtitle">Hair Cutting & Blessing Ritual Invitation</p>
+        </header>
 
-        <h3 class="parents-section-title">យើងខ្ញុំជាមាតាបិតា</h3>
-        <div class="parents-grid">
-            <div>
-                <span class="side-title">មាតាបិតាខាងប្រុស</span>
-                លោកគ្រូ <span class="parent-names">ហួ កាំង</span><br>
-                អ្នកគ្រូ <span class="parent-names">ហង្ស ស៊ីថា</span><br>
-                ព្រមទាំងបងប្អូន និងកូនចៅទាំងអស់
+        <!-- Parents Section Grid -->
+        <section aria-label="Parents Information">
+            <h2 class="parents-section-title">យើងខ្ញុំជាមាតាបិតា <span class="en-sub">/ Together with our Parents</span></h2>
+            <div class="parents-grid">
+                <div class="parent-side">
+                    <span class="side-title">មាតាបិតាខាងប្រុស</span>
+                    <span class="side-title-en">Groom's Parents</span>
+                    <div class="parent-names">
+                        លោកគ្រូ <span class="highlight-name">ហួ កាំង</span><br>
+                        អ្នកគ្រូ <span class="highlight-name">ហង្ស ស៊ីថា</span><br>
+                        <small class="en-name">Mr. Hou Kaing & Mrs. Hang Sitha</small><br>
+                        <span class="family-sub">ព្រមទាំងបងប្អូន និងកូនចៅទាំងអស់</span><br>
+                        <small class="en-family">and family</small>
+                    </div>
+                </div>
+
+                <div class="parent-side">
+                    <span class="side-title">មាតាបិតាខាងស្រី</span>
+                    <span class="side-title-en">Bride's Parents</span>
+                    <div class="parent-names">
+                        លោក <span class="highlight-name">ហ៊ុន ខេន</span><br>
+                        លោកស្រី <span class="highlight-name">.....</span><br>
+                        <small class="en-name">Mr. Hun Khen & Mrs. .....</small><br>
+                        <span class="family-sub">ព្រមទាំងបងប្អូន និងកូនចៅទាំងអស់</span><br>
+                        <small class="en-family">and family</small>
+                    </div>
+                </div>
             </div>
-            <div>
-                <span class="side-title">មាតាបិតាខាងស្រី</span>
-                លោក <span class="parent-names">ហ៊ុន ខេន</span><br>
-                <!-- Changed N/A to professional placeholder -->
-                លោកស្រី <span class="parent-names">.....</span><br>
-                ព្រមទាំងបងប្អូន និងកូនចៅទាំងអស់
-            </div>
-        </div>
+        </section>
 
-        <p class="ceremony-text">
-            មានកិត្តិយសសូមគោរពអញ្ជើញ <span class="honorific-highlight">ឯកឧត្តម លោកជំទាវ លោកអ្នកស្រី លោកឧកញ៉ា អ្នកឧកញ៉ា លោកអ្នកឧកញ៉ា</span> និងញាតិមិត្តជิតឆ្ងាយទាំងអស់ ដើម្បីចូលរួមជាអធិបតីភាព និងផ្តល់កិត្តិយសដ៏ខ្ពង់ខ្ពស់ក្នុងពិធីកាត់សក់បង្កក់សិរី (Hair Cutting Ritual) ដើម្បីជូនពរជ័យសิរីសួស្តី ក្នុងពិធីមង្គលការកូនប្រុស កូនស្រីរបស់យើងខ្ញុំ៖
-        </p>
-
-        <div class="couple-container">
-            <div class="couple-label">— កូនកំលោះ —</div>
-            <span class="couple-name">ហួកាំង ថារ៉ា</span>
-            <div class="and-connector"> និង </div>
-            <div class="couple-label">— កូនក្រមុំ —</div>
-            <span class="couple-name">ខេន លីដា</span>
-        </div>
-
-        <div class="datetime-section">
-            <div class="datetime-title">កាលបរិច្ឆេទកម្មវិធី</div>
-            <p class="datetime-date">
-                ថ្ងៃ..... ទី..... ខែ..... ឆ្នាំ២០២៦<br>
-                <span class="lunar-date">(ត្រូវនឹងថ្ងៃ ... កើត ខែមาឃ ឆ្នាំមមី អដ្ឋស័ក ព.ស. ២៥៧០)</span>
+        <!-- Ceremony Invitation Text (Bilingual) -->
+        <div class="ceremony-text-wrapper">
+            <p class="ceremony-text khmer">
+                មានកិត្តិយសសូមគោរពអញ្ជើញ <span class="honorific-highlight">ឯកឧត្តម លោកជំទាវ លោកអ្នកស្រី លោកឧកញ៉ា អ្នកឧកញ៉ា លោកអ្នកឧកញ៉ា</span> និងញាតិមិត្តជិតឆ្ងាយទាំងអស់ ដើម្បីចូលរួមជាអធិបតីភាព និងផ្តល់កិត្តិយសដ៏ខ្ពង់ខ្ពស់ក្នុងពិធីកាត់សក់បង្កក់សិរី ដើម្បីជូនពរជ័យសិរីសួស្តី ក្នុងពិធីមង្គលការកូនប្រុស កូនស្រីរបស់យើងខ្ញុំ៖
+            </p>
+            <div class="divider-line" aria-hidden="true"></div>
+            <p class="ceremony-text english">
+                We have the honor to cordially invite all distinguished guests, relatives, and friends to attend and bless the traditional Hair Cutting & Blessing Ceremony for our beloved children:
             </p>
         </div>
 
-        <div class="timeline-container">
-            <div class="timeline-item highlight-banquet">
-                <div class="time-badge">០៩:០០ ព្រឹក</div>
-                <div class="timeline-content">
-                    <a href="https://tharahuokaing.github.io/hair/" target="_blank">
-                        អញ្ជើញភ្ញៀវកិត្តិយសចូលរួមពិធីកាត់សក់បង្កក់សិរី (Hair Cutting Ritual)
-                    </a>
-                </div>​​
+        <!-- Couple Container -->
+        <div class="couple-container">
+            <div class="couple-side">
+                <span class="couple-label-km">— កូនកំលោះ —</span>
+                <span class="couple-label-en">Groom</span>
+                <span class="couple-name-km">ហួកាំង ថារ៉ា</span>
+                <span class="couple-name-en">Huokaing Thara</span>
+            </div>
+
+            <div class="and-connector" aria-hidden="true">
+                <span class="connector-km">&</span>
+            </div>
+
+            <div class="couple-side">
+                <span class="couple-label-km">— កូនក្រមុំ —</span>
+                <span class="couple-label-en">Bride</span>
+                <span class="couple-name-km">ខេន លីដា</span>
+                <span class="couple-name-en">Khen Lida</span>
             </div>
         </div>
-        
+
+        <!-- Date & Time Section -->
+        <div class="datetime-section">
+            <div class="datetime-title">កាលបរិច្ឆេទកម្មវិធី <span class="en-inline">/ Date & Time</span></div>
+            <div class="datetime-date">
+                <strong>ថ្ងៃ..... ទី..... ខែ..... ឆ្នាំ២០២៦</strong><br>
+                <small class="en-date">Date: TBD, 2026</small>
+                <div class="lunar-date">(ត្រូវនឹងថ្ងៃ ... កើត ខែមាឃ ឆ្នាំមមី អដ្ឋស័ក ព.ស. ២៥៧០)</div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline-container">
+            <div class="timeline-item highlight-banquet">
+                <div class="time-badge">០៩:០០ ព្រឹក | 09:00 AM</div>
+                <div class="timeline-content">
+                    <a href="https://tharahuokaing.github.io/hair/" target="_blank" rel="noopener noreferrer" class="timeline-link">
+                        <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+                        អញ្ជើញភ្ញៀវកិត្តិយសចូលរួមពិធីកាត់សក់បង្កក់សិរី<br>
+                        <span class="en-link-sub">Guests arrival & Hair Cutting Blessing Ritual</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Details -->
         <div class="location-section">
-            <span class="location-title">កម្មវិធីរៀបចំឡើងនៅ៖</span>
+            <span class="location-title">កម្មវិធីរៀបចំឡើងនៅ / Venue</span>
             <span class="location-name">ភោជនីយដ្ឋាន ផ្កាយ ៥ ហួ កាំង</span>
+            <span class="location-name-en">5-Star Hou Kaing Restaurant</span>
             <span class="location-sub">(សាខាមុខកំពូល ខេត្តកណ្តាល ព្រះរាជាណាចក្រកម្ពុជា)</span>
+            <span class="location-sub-en">Muk Kampoul Branch, Kandal Province, Kingdom of Cambodia</span>
         </div>
 
+        <!-- Blessing Statement -->
         <div class="blessing">
-            វត្តមានដ៏ខ្ពង់ខ្ពស់របស់លោកអ្នក គឺជាកិត្តិយសដ៏ធំធេងសម្រាប់គ្រួសារយើងខ្ញុំ!<br>
-            សូមអរគុណ និងសូមគោរពអញ្ជើញដោយក្តីរាប់អាន!
+            <p class="blessing-km">
+                "វត្តមានដ៏ខ្ពង់ខ្ពស់របស់លោកអ្នក គឺជាកិត្តិយសដ៏ធំធេងសម្រាប់គ្រួសារយើងខ្ញុំ! សូមអរគុណ និងសូមគោរពអញ្ជើញដោយក្តីរាប់អាន!"
+            </p>
+            <p class="blessing-en">
+                "Your presence is our greatest honor and blessing. Thank you and we look forward to welcoming you!"
+            </p>
         </div>
 
+        <!-- Action Link Button -->
+        <div class="action-buttons">
+            <a href="https://tharahuokaing.github.io/hair/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i> មើលព័ត៌មានបន្ថែម / View Details
+            </a>
+        </div>
+
+        <!-- Footer Ornament -->
         <div class="khmer-sticker-footer">
-            <!-- Fixed typo: weeding -> wedding -->
-            <img src="https://github.com/tharahuokaing/wedding/blob/main/footer.png?raw=true" alt="Decorative Traditional Footer Sign">
+            <img src="https://github.com/tharahuokaing/wedding/blob/main/footer.png?raw=true" alt="Decorative Traditional Footer Sign" loading="lazy">
         </div>
     </div>
-    
-    <button id="scrollTopBtn" onclick="scrollToTop()">⬆️ ត្រឡប់ទៅកំពូល</button>
+
+    <!-- Scroll to top button -->
+    <button type="button" id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i> ឡើងលើ
+    </button>
 
     <script src="script.js"></script>
     <script src="script1.js"></script>
+    <script>
+        // Scroll to Top behavior
+        window.onscroll = function() {
+            const scrollBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
