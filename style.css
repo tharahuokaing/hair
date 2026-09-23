@@ -1,11 +1,27 @@
-/* Base Style Setup */
+/* ==========================================================================
+   1. BASE SETUP & FONTS
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Hanuman:wght@400;700&family=Moul&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-red: #b11116;
+    --primary-red-hover: #8f0d11;
+    --gold-accent: #d4af37;
+    --gold-light: #fdf6ec;
+    --bg-cream: #fcf8f2;
+    --text-main: #222222;
+    --text-muted: #666666;
+    --border-gold: 2px solid #d4af37;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Hanuman', sans-serif;
-    background-color: #fcf8f2;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
     margin: 0;
     padding: 20px 10px;
     display: flex;
@@ -14,31 +30,50 @@ body {
     min-height: 100vh;
 }
 
+/* ==========================================================================
+   2. INVITATION CONTAINER
+   ========================================================================== */
 .invitation-container {
     background: #ffffff;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
-    border: 2px solid #d4af37;
+    border: var(--border-gold);
     border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px 25px;
+    box-shadow: var(--shadow-soft);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Typography Rules */
+/* ==========================================================================
+   3. TYPOGRAPHY & HEADERS (BILINGUAL)
+   ========================================================================== */
 .title-moul {
-    font-family: 'Moul', sans-serif;
-    color: #b11116;
+    font-family: 'Moul', serif;
+    color: var(--primary-red);
     font-size: 20px;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 15px 0 5px 0;
 }
 
+.title-english {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--gold-accent);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   4. PARENTS SECTION
+   ========================================================================== */
 .parents-section-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', serif;
     font-size: 16px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .parents-grid {
@@ -50,12 +85,29 @@ body {
     margin-bottom: 25px;
 }
 
+.parent-column {
+    background: #fafafa;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 10px;
+    padding: 12px;
+}
+
 .side-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', serif;
     display: block;
-    color: #b11116;
+    color: var(--primary-red);
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+.side-title-en {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 8px;
 }
 
 .parent-names {
@@ -63,92 +115,136 @@ body {
     color: #222;
 }
 
+/* ==========================================================================
+   5. CEREMONY INVITATION TEXT
+   ========================================================================== */
 .ceremony-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
     text-align: justify;
+    text-justify: inter-word;
     color: #444;
-}
-
-.honorific-highlight {
-    color: #b11116;
-    font-weight: bold;
-}
-
-/* Couple Info Style */
-.couple-container {
-    background: #fdf6ec;
-    border: 1px dashed #d4af37;
-    border-radius: 10px;
-    padding: 15px;
     margin: 20px 0;
 }
 
-.couple-label {
+.ceremony-text-en {
+    font-family: 'Poppins', sans-serif;
     font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.honorific-highlight {
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.text-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold-accent) 50%, transparent 100%);
+    margin: 15px auto;
+    width: 60%;
+}
+
+/* ==========================================================================
+   6. COUPLE SECTION
+   ========================================================================== */
+.couple-container {
+    background: var(--gold-light);
+    border: 1px dashed var(--gold-accent);
+    border-radius: 12px;
+    padding: 20px 15px;
+    margin: 25px 0;
+}
+
+.couple-label {
+    font-size: 12px;
     color: #777;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
 }
 
 .couple-name {
-    font-family: 'Moul', sans-serif;
-    font-size: 22px;
-    color: #b11116;
-    display: inline-block;
-    margin: 5px 0;
+    font-family: 'Moul', serif;
+    font-size: 20px;
+    color: var(--primary-red);
+    display: block;
+    margin-top: 2px;
+}
+
+.couple-name-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .and-connector {
     font-family: 'Freehand', cursive;
     font-size: 24px;
-    color: #d4af37;
-    margin: 5px 0;
+    color: var(--gold-accent);
+    margin: 10px 0;
 }
 
-/* Date and Time Layout */
+/* ==========================================================================
+   7. DATE & TIME SECTION
+   ========================================================================== */
 .datetime-section {
     margin: 20px 0;
+    padding: 15px;
+    background: #fffdf9;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .datetime-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', serif;
     color: #333;
     font-size: 15px;
 }
 
 .datetime-date {
-    font-size: 16px;
+    font-size: 15px;
     color: #222;
     line-height: 1.6;
+    margin: 5px 0;
 }
 
 .lunar-date {
     font-size: 13px;
     color: #666;
     font-style: italic;
+    display: block;
 }
 
-/* Timeline/Program Control */
+/* ==========================================================================
+   8. PROGRAM TIMELINE & ACCESSIBLE TOGGLE
+   ========================================================================== */
 .program-wrapper {
     margin: 25px 0;
 }
 
 .btn-program-toggle {
-    background: #b11116;
-    color: #fff;
+    background: var(--primary-red);
+    color: #ffffff;
     border: none;
     border-radius: 25px;
     padding: 12px 25px;
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease, transform 0.2s ease;
     width: 100%;
 }
 
 .btn-program-toggle:hover {
-    background: #8f0d11;
+    background: var(--primary-red-hover);
 }
 
 .btn-program-toggle:active {
@@ -163,8 +259,9 @@ body {
     margin-top: 20px;
     text-align: left;
     background: #fffdf9;
-    border-left: 3px solid #d4af37;
-    padding: 10px 15px;
+    border-left: 3px solid var(--gold-accent);
+    padding: 15px;
+    border-radius: 0 10px 10px 0;
 }
 
 .timeline-container.collapsed {
@@ -175,7 +272,7 @@ body {
 }
 
 .timeline-main-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', serif;
     font-size: 13px;
     color: #444;
     margin-bottom: 15px;
@@ -188,13 +285,13 @@ body {
 }
 
 .time-badge {
-    background: #d4af37;
-    color: #fff;
+    background: var(--gold-accent);
+    color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin-right: 10px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-right: 12px;
     white-space: nowrap;
 }
 
@@ -206,17 +303,19 @@ body {
 }
 
 .timeline-content a:hover {
-    color: #b11116;
+    color: var(--primary-red);
     text-decoration: underline;
 }
 
 .highlight-banquet {
-    background: rgba(212, 175, 55, 0.08);
-    padding: 8px;
-    border-radius: 5px;
+    background: rgba(212, 175, 55, 0.12);
+    padding: 10px;
+    border-radius: 8px;
 }
 
-/* Location Area */
+/* ==========================================================================
+   9. LOCATION & BLESSING
+   ========================================================================== */
 .location-section {
     margin-top: 25px;
 }
@@ -228,27 +327,46 @@ body {
 }
 
 .location-name {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', serif;
     font-size: 18px;
-    color: #b11116;
+    color: var(--primary-red);
     display: block;
-    margin: 5px 0;
+    margin: 5px 0 2px 0;
+}
+
+.location-name-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gold-accent);
+    display: block;
+    margin-bottom: 5px;
 }
 
 .location-sub {
     font-size: 13px;
     color: #666;
+    display: block;
 }
 
 .blessing {
     font-size: 14px;
     line-height: 1.8;
     color: #444;
-    margin: 20px 0;
+    margin: 25px 0 15px 0;
     font-style: italic;
 }
 
-/* Graphics Wrappers */
+.blessing-en {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   10. GRAPHICS & SCROLL TO TOP
+   ========================================================================== */
 .khmer-sticker-header img,
 .khmer-sticker-footer img {
     max-width: 100%;
@@ -257,40 +375,60 @@ body {
     margin: 0 auto;
 }
 
-/* Scroll To Top Action Trigger Style */
 #scrollTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    background: #b11116;
-    color: white;
-    border: none;
-    padding: 10px 15px;
+    background: var(--primary-red);
+    color: #ffffff;
+    border: 1px solid var(--gold-accent);
+    padding: 10px 16px;
     border-radius: 50px;
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
     font-size: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
 #scrollTopBtn:hover {
-    background: #333;
+    background: #333333;
     transform: translateY(-2px);
 }
 
-/* Mobile Responsive Adjustments */
-@media (max-width: 480px) {
+/* ==========================================================================
+   11. RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 576px) {
+    .invitation-container {
+        padding: 20px 15px;
+    }
+
     .parents-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 12px;
     }
-    .invitation-container {
-        padding: 15px;
-    }
+
     .title-moul {
+        font-size: 17px;
+    }
+
+    .title-english {
+        font-size: 14px;
+    }
+
+    .couple-name {
         font-size: 18px;
+    }
+
+    .couple-name-en {
+        font-size: 15px;
+    }
+
+    .ceremony-text,
+    .ceremony-text-en {
+        text-align: center;
     }
 }
